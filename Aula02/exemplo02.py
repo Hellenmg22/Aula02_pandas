@@ -40,3 +40,11 @@ print(50*'-')
 print(f'Q1: {q1}')
 print(f'Q2: {q2}')
 print(f'Q3: {q3}')
+
+print('\nMenores')
+print(50*'-')
+df_menores = df_planilha_custos[df_planilha_custos['Custo total (R$)']] < q1
+
+print('\nMaiores')
+print(50*'-')
+df_menores = df_planilha_custos[df_planilha_custos['Custo total (R$)']] > q3
